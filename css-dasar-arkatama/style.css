@@ -1,0 +1,72 @@
+body {
+  background-color: beige;
+  font-family: "Kode Mono", monospace;
+  /* background-image: url("/assets/lumba-lumba.jpg");  */
+  background-repeat: repeat-y;
+  background-position: center;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  padding: 3px 2px;
+  /* writing-mode:vertical-lr;  */
+}
+.border {
+  border: 3px solid red;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+}
+.border::hover {
+  color: red;
+}
+.border::active {
+  color: black;
+}
+/* .border::after{
+  content: "Ini Setelahnya";
+} */
+.border h3 {
+  text-align: center;
+  justify-content: center;
+  opacity: 0.5;
+}
+ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+table,
+th,
+td {
+  width: 400px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 2px;
+  border-collapse: collapse;
+}
+table th,
+td {
+  text-align: center;
+}
+/* .border p{
+  outline: 2px solid olive;
+  
+} */
+
+.input:focus {
+  outline: none;
+  border: 2px solid red;
+}
+
+.input:hover {
+  border: 2px solid yellowgreen;
+}
+
+.checkbox:checked {
+  margin-left: 30px;
+}
