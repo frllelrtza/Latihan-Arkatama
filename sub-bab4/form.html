@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+  </head>
+  <body>
+    <form action="read.html" method="post" enctype="multipart/form-data">
+      
+      <br />
+      <br />
+
+      <br />
+  
+      <!-- Data Diri -->
+      <fieldset>
+        <legend>Data Diri</legend>
+        <input type="hidden" name="user_id" value="00001" />
+        <label for="username">username:</label>
+        <input type="text" name="username" id="username" />
+        <br />
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password" required />
+        <br />
+        <label for="warna_favorit">Warna Favorit:</label>
+        <input type="color" id="warna_favorit" name="warna_favorit" />
+        <br />
+        <br />
+        <label for="kelamin">Kelamin:</label><br />
+        <input type="radio" name="kelamin" id="laki_laki" value="laki_laki" />
+        <label for="laki_laki">Laki-Laki</label><br />
+        <input type="radio" name="kelamin" id="perempuan" value="perempuan" />
+        <label for="perempuan">Perempuan</label>
+        <br /><br />
+        <label for="materi">Materi Yang Dikuasai:</label>
+        <br />
+        <input type="checkbox" id="html" name="materi" value="html" />
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="materi" value="css" />
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="javascript" name="materi" value="javascript" />
+        <label for="javascript">JavaScript</label>
+        <br />
+        <label for="tgl_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tgl_lahir" name="tgl_lahir" min="2000-01-01" max="2024-01-01" />
+      </fieldset>
+      <fieldset>
+        <legend>Data Lain</legend>
+        <label for="jam">Jam Ketemu:</label>
+        <input type="datetime-local" id="jam" name="jam" min="2024-01-01T12:00" max="2024-02-02T00:00" />
+        <br />
+        <label for="laporan">Laporan Bulan:</label>
+        <input type="month" id="laporan" name="laporan" min="2024-01" max="2024-12" />
+        <br />
+        <label for="alarm">Set Alarm:</label>
+        <input type="time" id="alarm" name="alarm" min="07:00" max="19:00" />
+        <br />
+        <label for="event">Set Event:</label>
+        <input type="week" name="event" id="event" min="2024-W03" max="2024-W50" />
+        <br />
+        <label for="number">Input Number:</label>
+        <input type="number" id="number" name="number" min="1" max="100" step="2" />
+        <br />
+        <label for="telepon">Input no HP</label>
+        <input type="tel" id="telepon" name="telepon" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" />
+  
+        <br />
+        <label for="file">Input File:</label>
+        <input type="file" name="file" id="file" accept=".pdf" />
+        <br />
+  
+        <input type="image" src="/assets/lumba-lumba.jpg" />
+        <br />
+  
+        <label for="volume">volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="5" value="20" />
+        <br />
+        <br />
+        <label for="website">Input website:</label>
+        <input type="url" id="website" name="website" required />
+        <br />
+        <label for="pesan">Pesan:</label>
+        <textarea name="pesan" id="pesan" cols="50" rows="5"></textarea>
+        <br /><br />
+        <label for="mobil">Pilih Mobil:</label>
+        <select name="mobil" id="mobil" multiple size="3">
+          <optgroup label="mobil_mahal">
+            <option value="bmw">BMW</option>
+          </optgroup>
+          <optgroup label="mobil_murah">
+            <option value="honda">City</option>
+            <option value="toyota">Avanza</option>
+          </optgroup>
+        </select>
+        <br /><br />
+        <input type="text" list="browser" />
+        <datalist id="browser">
+          <option value="Chrome"></option>
+          <option value="Mozila"></option>
+          <option value="Opera"></option>
+          <option value="Edge"></option>
+        </datalist>
+  
+      </fieldset>
+
+      <label for="remember">Remember me?</label>
+      <input type="checkbox" name="remember" id="remember" />
+      <input type="reset" name="reset" id="reset" />
+      <input type="button" value="alert" onclick="alert()" />
+      <br />
+      <input type="submit" value="submit" />
+      <br />
+    </form>
+
+    <script>
+      function alert() {
+        alert("Allert button Clicked!");
+      }
+    </script>
+  </body>
+</html>
