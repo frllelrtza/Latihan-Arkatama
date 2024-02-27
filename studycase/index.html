@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Form Pendaftaraan Pelatihan dan Sertifikasi BNSP</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/style/main.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="src/image/logo_edu.png" height="30" alt="" />
+
+      <ul>
+        <li>
+          <a href="#TentangKami">Tentang Kami</a>
+        </li>
+        <li>
+          <a href="#Layanan">Layanan</a>
+        </li>
+        <li>
+          <button>Daftar Sekarang</button>
+        </li>
+      </ul>
+    </nav>
+    <img class="bg-header" src="src/image/vb.jpg" alt="" />
+
+    <h1 class="title">Form Pendaftaraan <br />Pelatihan dan Sertifikasi BNSP</h1>
+
+    <form action="" method="post">
+      <div class="parent-content">
+        <div class="section-50">
+          <label for="nama">Nama:</label>
+          <input class="input" type="text" name="nama" id="nama" required />
+        </div>
+
+        <div class="section-50">
+          <label for="email">Email:</label>
+          <input class="input" type="email" id="email" name="email" required />
+        </div>
+      </div>
+
+      <div class="parent-content">
+        <div class="section-50">
+          <label for="telepon">no HP:</label>
+          <input type="tel" id="telepon" name="telepon" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required />
+        </div>
+
+        <div class="section-50">
+          <label for="alamat">Alamat:</label>
+          <textarea name="alamat" id="alamat" cols="30" rows="5" required></textarea>
+        </div>
+      </div>
+
+      <div class="parent-content align-end">
+        <div class="section-50"> 
+            <label for="skema">Skema Pelatihan:</label>
+            <select name="skema" id="skema" required>
+                <option value="">Pilih Skema</option>
+              <option value="digital_marketing">Digital Marketing</option>
+              <option value="content_creator">Content Creator</option>
+              <option value="sosial_media_marketing">Sosial Media Marketing</option>
+            </select>
+          </div>
+           
+          <div class="section-50">
+              <input class="btn-primary" type="submit" value="submit" />
+          </div>
+      </div>
+
+    <div class="parent-content">
+        <div class="section-50">
+            <label for="bukti_pembayaran">Bukti Pembayaran:</label>
+            <input type="file" name="bukti_pembayaran" id="bukti_pembayaran" accept=".pdf , .png , .jpg" required />
+          </div>
+    </div>
+    </form>
+
+    <footer>
+        <h1>AMD Academy</h1>
+    </footer>
+  </body>
+</html>
