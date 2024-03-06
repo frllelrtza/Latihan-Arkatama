@@ -64,3 +64,64 @@ UPDATE products SET price = price - 30000 WHERE price <= 150000;
 DELETE from products WHERE NAME = 'tas tiga';
 
 DELETE from products WHERE NAME = 'sepatu dua';
+
+SELECT * FROM products WHERE stock = 25;
+
+SELECT * FROM products WHERE stock != 30;
+
+SELECT * FROM products WHERE stock >= 25;
+
+SELECT * FROM products WHERE stock != 30 AND name LIKE '%dua';
+
+SELECT * FROM products WHERE stock != 25 AND price >= 100000;
+
+SELECT * FROM products WHERE stock != 25 or price >= 100000;
+
+select * FROM products WHERE NAME LIKE '%ua%';
+
+SELECT * FROM products WHERE NAME NOT LIKE 'sepatu%';
+
+SELECT * FROM products WHERE  description IS NULL;
+
+SELECT * FROM products WHERE  price IS not NULL;
+
+SELECT * FROM products WHERE stock BETWEEN 20 AND 35;
+
+SELECT * FROM products WHERE price NOT BETWEEN 30000 AND 120000;
+
+ALTER TABLE products
+ADD COLUMN category ENUM ('fashion','daily');
+
+UPDATE products SET category = 'fashion' WHERE CODE ='A0001';
+UPDATE products SET category = 'daily' WHERE CODE ='A0002';
+UPDATE products SET category = 'fashion' WHERE CODE ='B0001';
+UPDATE products SET category = 'daily' WHERE CODE ='C0001';
+UPDATE products SET category = 'daily' WHERE CODE ='C0002';
+
+SELECT * FROM products WHERE category IN ('fashion','daily');
+
+SELECT * FROM products WHERE code not IN ('B0001','A0001');
+
+SELECT * FROM products 
+WHERE name LIKE '%satu%' OR name LIKE '%dua%';
+
+SELECT 
+CODE AS kode,
+NAME AS nama,
+stock AS stok,
+price AS harga
+FROM products AS p;
+
+SELECT 
+CODE AS kode,
+NAME AS nama,
+stock AS stok,
+price AS harga
+FROM products;
+
+SELECT * FROM products ORDER BY  stock ASC, NAME DESC;
+
+SELECT * FROM products ORDER BY harga ASC;
+
+SELECT * FROM products ORDER BY created_at ASC;
+
