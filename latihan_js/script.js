@@ -70,4 +70,47 @@ for (let i = 1; i <= 5; i++) {
   console.log("Ini perulangan ke -", i);
 }
 
+//mentoring
 
+const benua = ["Asia", "Eropa", "Afrika", "Australia"];
+
+var alamat = "Malang";
+
+let noHP = "085xxxxxxxx";
+let nama = "Arkatama";
+
+function cetakNama() {
+  console.log(benua);
+  console.log(alamat);
+  console.log(nama);
+}
+
+function cetakAlamat() {
+  console.log(benua);
+  console.log(alamat);
+  // console.log(nama);
+}
+
+cetakNama();
+cetakAlamat();
+
+function myFunction() {
+  let message = "Hello World!";
+
+  if (true) {
+    let message = "Goodbye World!";
+  }
+
+  console.log(message);
+}
+myFunction();
+
+let umur = 20;
+
+if (umur >= 17) {
+  console.log("Bisa Buat KTP");
+} else {
+  console.log("Belum Bis Buat KTP");
+}
+
+umur >= 10 ? console.log("Ternary - Bisa Buat KTP") : console.log("Ternary - Belum Bisa Buat KTP");
