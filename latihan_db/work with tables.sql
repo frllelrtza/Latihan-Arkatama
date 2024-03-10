@@ -125,3 +125,66 @@ SELECT * FROM products ORDER BY harga ASC;
 
 SELECT * FROM products ORDER BY created_at ASC;
 
+SELECT 15 + 15 AS tambah,
+
+ 15 / 15 AS kurang,
+
+ 15 % 2 AS modulus;
+
+SELECT tan(7);
+
+SELECT power(30,2); // pangkat
+
+SELECT PI() * 7 * 7;
+
+SELECT SIN(4);
+
+SELECT COS(2);
+
+SELECT * FROM products;
+
+SELECT NAME, LOWER(NAME) FROM products;
+
+SELECT NAME, upper(NAME) FROM products;
+
+SELECT NAME, length(NAME) FROM products;
+
+SELECT NAME, CODE, substring(code, 2) FROM products ORDER BY CODE DESC;
+
+SELECT NAME, RIGHT(NAME, 4) FROM products;
+
+SELECT NAME, LEFT(CODE, 1) FROM products;
+
+SELECT * FROM products;
+
+SELECT dayname(created_at) FROM products WHERE CODE ='B0001';
+
+SELECT monthname(created_at) FROM products WHERE CODE ='B0001';
+
+SELECT time(created_at) FROM products WHERE CODE ='B0001';
+
+SELECT dayname(created_at) FROM products WHERE CODE ='B0001';
+
+SELECT created_at, dayname(created_at) FROM products WHERE CODE ='B0001';
+
+SELECT second(created_at) FROM products WHERE CODE ='B0001';
+
+SELECT date(created_at) FROM products WHERE CODE ='B0001';
+
+SELECT 
+    DAY(created_at) AS hari, 
+    MONTH(created_at) AS bulan, 
+    YEAR(created_at) AS tahun,
+    DAYNAME(created_at) AS nama_hari
+FROM products
+WHERE CODE ='B0001';
+
+SELECT 
+    CONCAT(
+    DAYNAME(created_at), ', ',
+        DAY(created_at), '/', 
+        MONTH(created_at), '/', 
+        YEAR(created_at)
+    ) AS tanggal_lengkap
+FROM products
+WHERE CODE ='B0001';
