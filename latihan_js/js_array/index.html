@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="judul">Judul</h1>
+    <a href="#">My Link</a>
+
+    <script src="/latihan_js/js_array/script.js">
+      let judul = document.getElementById('judul');
+
+      setTimeout(() => {
+      judul.innerHTML = 'Websiteku';
+      judul.style.fontSize = '53px';
+      judul.setAttribute('class', 'Header');
+      }, timeout);
+
+      console.log(judul);
+    </script>
+  </body>
+</html>
